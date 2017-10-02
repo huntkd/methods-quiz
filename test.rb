@@ -68,7 +68,7 @@ describe 'Methods' do
     end
 
     it 'the second number is closer to the target' do
-      closer_to(10, 14, 9).must_equal(11)
+      closer_to(10, 14, 9).must_equal(9)
     end
 
     it 'same distance from the target' do

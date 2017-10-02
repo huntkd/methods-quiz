@@ -43,4 +43,18 @@ end
 
 # TODO - write closer_to
 
+def closer_to (target, guess1, guess2)
+
+	if (target - guess1).abs > (target - guess2).abs
+		return guess2
+	end
+	if (target - guess2).abs > (target - guess1).abs
+		return guess1
+	end
+	if (target - guess1).abs == (target - guess2).abs
+		return 0
+	end
+
+end
+
 # TODO - write two_as_one?
