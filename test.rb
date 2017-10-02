@@ -77,5 +77,26 @@ describe 'Methods' do
 
   end
 
+  describe 'two_as_one?' do
+
+    it 'first two numbers add to equal the last number' do
+      two_as_one?(5, 2, 7).must_equal(true)
+    end
+
+    it 'second two numbers add to equal the first number' do
+      two_as_one?(10, 7, 3).must_equal(true)
+    end
+
+    it 'first and third numbers add to equal the second' do
+      two_as_one?(3, 7, 4).must_equal(true)
+    end
+
+    it 'the number do not add to equal each other' do
+      two_as_one?(3, 2, 4).must_equal(false)
+    end
+
+
+  end
+
 
 end
