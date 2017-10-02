@@ -37,6 +37,30 @@ describe 'Methods' do
 
   end
 
+  describe 'has_teen?' do
+
+    it 'one is icy' do
+      has_teen?(-1, 17).must_equal(false)
+    end
+
+    it 'one is hot' do
+      has_teen?(5, 106).must_equal(false)
+    end
+
+    it 'one is icy and the other is hot' do
+      has_teen?(-7, 105).must_equal(true)
+    end
+
+    it 'one is hot and the other is icy' do
+      has_teen?(102, -3).must_equal(true)
+    end
+
+    it 'neither is icy or hot' do
+      has_teen?(5, 6).must_equal(false)
+    end
+
+  end
+
 
 
 end
