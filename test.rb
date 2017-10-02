@@ -61,6 +61,21 @@ describe 'Methods' do
 
   end
 
+  describe 'closer_to' do
+
+    it 'the first number is closer to the target' do
+      closer_to(1, 2, 4).must_equal(2)
+    end
+
+    it 'the second number is closer to the target' do
+      closer_to(10, 14, 9).must_equal(11)
+    end
+
+    it 'same distance from the target' do
+      closer_to(3, 2, 4).must_equal(0)
+    end
+
+  end
 
 
 end
