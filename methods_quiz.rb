@@ -58,3 +58,13 @@ def closer_to (target, guess1, guess2)
 end
 
 # TODO - write two_as_one?
+
+def two_as_one? (a, b, c)
+
+	if a + b == c || b + c == a || a + c == b 
+		return true
+	end
+
+	return false
+
+end
