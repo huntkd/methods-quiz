@@ -28,11 +28,11 @@ describe 'Methods' do
   describe 'not_string' do
 
     it 'string that does not start with not' do
-      not_string(funny).must_equal(notfunny)
+      not_string("funny").must_equal("notfunny")
     end
 
     it 'string that does start with not' do
-      not_string(notfunny).must_equal(notfunny)
+      not_string("notfunny").must_equal("notfunny")
     end
 
   end
