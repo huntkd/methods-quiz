@@ -30,6 +30,17 @@ end
 
 # TODO - write icy_hot?
 
+def icy_hot? (temp1, temp2)
+	if temp1 < 0 || temp2 < 0
+		if temp1 > 100 || temp2 > 100
+			return true
+		end
+	end
+
+	return false
+
+end
+
 # TODO - write closer_to
 
 # TODO - write two_as_one?
